@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+     <style>
+        .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+    
+    body{
+        background-image: url('{% static '../static/makin/bg.jpg' %}');
+        background-size:cover;
+        background-repeat:no-repeat;
+        font-family: cursive;
+    }
+    h1{
+        color: black;
+    }
+    .cont{
+        margin:auto;
+        text-align: center;
+    }
+    .item{
+        background-color:rgb(148, 88, 88);
+        text-decoration: none;
+        border: 1px rgb(148, 88, 88);
+        border-radius: 10px;
+        margin:50px auto;
+    padding: 9px;
+        height: 43%;
+        width: 20%;
+        padding: 50px auto;
+        justify-content: center;
+        /* align-content: center; */
+        text-align: center;
+        /* align-content: space-around;
+        display: flex;
+        flex-direction: row; */
+        /* flex-wrap: wrap; */
+        
+    }
+    .item p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding:28%;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #item1,#item2,#item3{
+    width: 26%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    }
+    #item4,#item5,#item6{
+        width:26%;
+        display: flex;
+        justify-content: space-around;
+    }</style>
+</head>
+<body>
+    <div class="cont">
+    <h1>WELCOME TO NON-ACADEMIC SECTION</h1>
+    <h2>So basically what are you interseted in ?</h2>
+    <h3>Click on the icons you think you should do when you are free</h3>
+    </div>
+    <div class="container">
+        <div class="item" id="item1"><a href="{% url 'outdoor' %}"><p>OUTDOOR ACTIVITY</p></a></div>
+        <div class="item" id="item2"><a href="{% url 'indoor' %}"><p>INDOOR ACTIVITY</p></a></div>
+        <div class="item" id="item3"><a href="{% url 'others' %}"><p>OTHERS</p></a></div>
+        </div>
+</body>
+</html>

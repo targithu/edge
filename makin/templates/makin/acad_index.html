@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PROJECT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        
+.form-grp{
+    background:black;
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+  width: 60vw;
+  height: 100%;
+    border: 2px solid rgb(72, 255, 0);
+   border-radius: 20px;
+}
+.co input[type="text"],.co input[type="password"]{
+    display: block;
+    padding: 14px 10px;
+    margin: 20px;
+    border-radius: 20px;
+    transition:all 4s ease-in;
+}
+.co p{
+    color: white;
+}
+.co h2{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-self: center;
+}
+#btn{
+    border: 0;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 3px solid white;
+    padding: 10px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.co{
+ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+height: 100%;
+padding: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+} */
+
+body{
+     margin: 0%;
+     padding: 0%;
+     height: 100%;
+     width: 100%;
+}
+.bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: center/cover;
+    height: 100%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0;
+}
+
+#logo{
+    margin: 24px 45px;
+    }
+    #logo img{
+        padding-top: 0rem;
+        height: 68px;
+        margin-top: 0%;
+       
+    }
+    #navbar ul{
+        display: flex;
+     }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+     }
+     #navbar ul li{
+         list-style: none;
+         font-size: 1.2rem;
+     }
+     #navbar ul li a{
+       color: aliceblue;
+       display:block;
+       padding: 3px 22px;
+       border-radius: 20px;font-family: 'Roboto', sans-serif;
+     
+     }
+     #navbar ul li a:hover{
+         color:black;
+         background-color: aliceblue;
+       }
+       #item-0,it{
+        width: 50%;
+       }
+     */
+     *{
+        margin:0;
+        padding:0;
+    }
+    /* NavigationBar */
+    #navbar{
+        display: flex;
+        align-items: center;
+        position:sticky;
+        top: 0;
+        
+    }
+    /* NavigationBar :Logo and image*/
+    #logo{
+    margin: 24px 45px;
+    }
+    #logo img{
+        padding-top: 0rem;
+        height: 68px;
+        margin-top: 0%;
+       
+    }
+    /*NavigationBar :List styling */
+    #navbar ul{
+        display: flex;
+     }
+     a{
+        text-decoration: none;
+     }
+     /*below is a pseudo element */
+    #navbar::before{
+       content: "";
+       background-color: black;
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       z-index: -1;
+       opacity: 0.6;
+    }
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.2rem;
+    }
+    #navbar ul li a{
+      color: aliceblue;
+      display:block;
+      padding: 3px 22px;
+      border-radius: 20px;font-family: 'Roboto', sans-serif;
+    
+    }
+    #navbar ul li a:hover{
+        color:black;
+        background-color: aliceblue;
+      }
+      #navbar ul button{
+       display: flex;
+      }
+.bbow{
+        background-color: rgb(255, 0, 0);
+        display: inline-block;
+        right:10%;
+    }
+      /* Home Section */
+    #schedule::before{
+        content: "";
+        /* background:url('../img/bg1.jpg') no-repeat center center/cover; */
+        position: absolute;
+        height: 549px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+        top:0;
+        left: 0;
+    }
+    #schedule{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items:center ;
+        height: 400px;
+    }
+    #schedule h1{
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    #schedule p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 1.2rem;
+         font-family: 'Roboto', sans-serif; 
+    }
+    /*Services Section*/
+    #services{
+        margin:34px;
+        display:flex;
+    }
+    html{
+    scroll-behavior: smooth;
+    }
+    #services .box{
+       border: 2px solid brown;
+       padding: 34px;
+       margin:3px 25px;
+       border-radius: 28px;
+       background: #f2f2f2;
+       margin-bottom: 20px;
+    }
+    #services .box img{
+      height: 160px;
+      display: block;
+      margin: auto;
+     }
+    #services .box p{
+        font-family: 'Roboto', sans-serif; 
+    }
+    /* Clients Section */
+    #client-section{
+        position: relative;
+    }
+    #client-section::before{
+       content:" " ;
+       position: absolute;
+       background-image: url(../img/bg.jpg);
+       width: 100%;
+       height: 100%;
+       z-index: -1;
+       opacity:0.4;
+    }
+    #clients{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;;
+    }
+    #clients img{
+    height: 130px;
+    }
+    .client-item{
+        padding: 34px;
+    }
+    /*Contact-Section*/
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        padding-top: 0em;
+        content:"";
+        position:absolute;
+        width: 100%;
+        height:100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url("static/bg.jpg") no-repeat center center/cover;/* error*/8
+         ;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:34px ;
+    }
+    #contact-box form{
+        width:40%;
+    }
+    #contact-box label{
+        font-family: 1.3rem;
+        font-family: 'Roboto', sans-serif; 
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 28px;
+    }
+    /*Utility Classes*/
+    .h-primari{ 
+        font-size: 3rem;
+        padding: 12px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif; 
+    }
+    .h-secondari{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif; 
+        text-align: center;
+        justify-content: center;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: brown;
+        color: white;
+        font-size:1.5rem ;
+        border-radius: 30px;
+        cursor: pointer; 
+    }
+    .center{
+        text-align: center;
+        font-size: 1rem;
+    }
+    @media screen and (max-width:1100px){
+        /*Navigation*/
+        #navbar{
+            flex-direction: column;
+        }
+        #navbar ul li a{
+            font-size:1rem;
+            padding: 0px 7px;
+            padding-bottom: 8px;
+        }
+        #navbar ul button{
+            font-size:1rem;
+                flex-direction: column;
+            margin-left:45%;
+        }
+        /* Home section */
+        #home{
+         height: 370px;
+         padding: 3px 68px;
+         }
+        #home::before{
+            height: 480px;
+            }
+        #home p{
+            font-size: 13px;
+        }
+        /*services section */
+        #services{
+          flex-direction: column;
+        }
+        #services .box img {
+            height: 130px;
+            display: block;
+            margin: auto;
+        }
+        /* Client's section */
+        #clients{
+            flex-wrap:wrap ;
+        }
+        
+        /*Utility classes*/
+        .h-primary{
+            font-size: 26px;
+        }
+        .btn{
+            font-size: 13px;
+            padding:4px 8px;
+        }
+        }  
+    </style>
+    </head>
+    <body>
+       <nav id="navbar">
+        <div id="logo">
+            <img src="../static/makin/edge.png" alt="EDGE APP">
+        </div>
+        <ul>
+            <li class="item"><a href="#schedule">SET SCHEDULE</a></li>
+            <li class="item"><a href="#services-container">TASKS</a></li>
+            <li class="item"><a href="#client-section">I</a></li></ul>
+         <div class="bbow"><button><a href="login.html">LOGOUT</a></button></div>
+    </nav>
+    <section id="schedule">
+        <h1 class="h-primary">Welcome To Edge</h1>
+        <p>EDGE IS A WEB-APP WHICH WOULD HELP STUDENTS MANAGE THEIR TIME EFFECTIVELY.</p>
+        <p>FOR EVERY AGE CATEGORY THERE IS A METHOD TO MANAGE TIME.</p>
+     
+    </section>
+    <section id="services-container">
+        <h1 class="h-primari">CLICK ON THE CATEGORY YOU BELONG TO: </h1>
+            <div id="services">
+                <div class="box"> <a href='#' style="color:black;">
+                    <img src="img/3.png" alt="">
+                    <h2 class="h-secondari"><a href="{% url 'foundational' %}">FOUNDATIONAL</a></h2>
+               <p class="center">FOR CLASS KG-1 TO KG-2</p></a>
+                </div>
+        
+                 <div class="box">
+                    <a href='#' style="color:black;">   <img src="img/1.png" alt="">
+                        <h2 class="h-secondari">PREPARATORY</h2>
+                   <p class="center">FOR CLASS 1-5</p></a>
+                </div>
+            
+                <div class="box">
+                    <a href='{% url 'middle' %}' style="color:black;"> <img src="img/2.png" alt="">
+                   <h2 class="h-secondari">MIDDLE</h2>
+                     <p class="center">FOR CLASS 6-8</p>
+                </a></div>
+                <div class="box">
+                    <a href='{% url 'secondary' %}' style="color:black;">
+                    <img src="img/1.png" alt="">
+                    <h2 class="h-secondari">Secondary</h2>
+               <p class="center">FOR CLASS 9-12</p></a>
+            </div>
+            <div class="box">
+                <a href="#" style="color:black;">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondari">YOUTH</h2>
+           <p class="center">FOR COLLEGE STUDENTS UNDERGOING THEIR RESPECTIVE DEGREES.</p></a>
+        </div>
+
+            </div>
+    </section>
+    <hr>
+    <section id="client-section">
+        <h1 class="h-primari">Organisation</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="NCERT">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="DoSEL">
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+          </div>
+    </section>
+    <footer> <div class="center">
+        Copyright &copy; NCERT All rights reserved
+    </div></footer>
+       
+        <script src="index.js" async defer></script>
+    </body>
+</html>

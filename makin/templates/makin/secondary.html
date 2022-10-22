@@ -1,0 +1,46 @@
+{% extends 'makin/base.html' %} {% block content %}
+<div class="header-bar">
+    <div>
+        <h1>Hello {{request.user|title}} EARN 5000 POINTS TO EARN GOODIES</h1>
+    </div>
+</div>
+<div class="nav">
+    <div id="dashboard">
+        <img src="../static/makin/edge.png" alt="EDGE "></div>
+{% if request.user.is_authenticated %}
+<a href="{% url 'logout' %}">Logout</a>
+{% else %}
+<a href="{% url 'login' %}">Login</a>
+{% endif %}
+<p class="iu" id="iu" onclick="incre()">POINTS:</p>
+<a href="{% url 'pomodoro' %}" style="text-decoration:none"><h4><i>THE POMODORO CLOCK</i></h4></a>
+<div>
+<hr>
+<h1>MY TO-DO-LIST</h1>
+<a href="{% url 'task-create' %}">ADD TASK</a>
+ <form method="GET">
+        <input type='text' value='search-area' value="{{search_input}}">
+        <input type="submit" value='Search'>
+    </form> 
+<div class="task-items-wrapper">
+    {% for task in tasks %}
+    <div class="task-wrapper">
+        {% if task.complete %}
+         <div class="task-title">
+            <div class="task-complete-icon"></div>
+                <i><s><a href="{% url 'task-update' task.id %}">{{task}}</a></s></i>
+            </div>
+            <a class="delete-link" href="{% url 'task-delete' task.id %} ">&#215;</a>
+            {% else %}
+            <div class="task-title">
+                <div class="task-incomplete-icon"></div>
+                    <a href="{% url 'task-update' task.id %}">{{task}}</a>
+         </div>
+         <a class="delete-link" href="{% url 'task-delete' task.id %} ">&#215;</a>
+         {% endif %}
+        </div>
+    {% empty %}  
+    <h3> No items in list</h3>
+    {% endfor %} 
+</div>
+{% endblock content %} 

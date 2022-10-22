@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            text-decoration: none;
+        }
+        
+        body{
+            background-image: url('{% static '../static/makin/bg.jpg' %}');
+            background-size:cover;
+            background-repeat:no-repeat;
+            font-family: cursive;
+        }
+        h1{
+            color: black;
+        }
+        .cont{
+            margin:auto;
+            text-align: center;
+        }
+        .item{
+            background-color:black;
+            text-decoration: none;
+            border: 1px rgb(148, 88, 88);
+            border-radius: 10px;
+            margin:50px auto;
+        padding: 9px;
+            height: 43%;
+            width: 20%;
+            padding: 50px auto;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .item p{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding:28%;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #item1,#item2,#item3{
+        width: 26%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        p{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>CLICK ON THE ICON YOU ARE CURRENTLY INTERESTED IN</h1>
+    <div class="container">
+         <div class="item" id="item1"><a href=" {% url 'acad_index' %}"<p>ACADEMICS</p></a></div>
+          <div class="item" id="item2"><a href="{% url 'non_acad' %}"<p>NON-ACADEMICS &#128512;</p></a></div>
+        </div>
+</body>
+</html>

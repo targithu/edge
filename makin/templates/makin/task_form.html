@@ -1,0 +1,10 @@
+{% extends 'makin/base.html' %}
+{% block content %}
+<h3>TASK FORM</h3>
+<a href="{% url 'tasks' %}">GO BACK</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}} 
+    <input type="submit" value="Submit"> 
+</form>
+{% endblock content %}

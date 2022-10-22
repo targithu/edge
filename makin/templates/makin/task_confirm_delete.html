@@ -1,0 +1,9 @@
+{% extends 'makin/base.html' %}
+{% block content %}
+<a href="{% url 'tasks' %}">Go back</a>
+<form method="POST">
+{% csrf_token %}
+<p>ARE YOU SURE YOU WANT TO DELETE THIS TASK? {{task}}</p>
+<input type="submit" value="DELETE"/>
+</form>
+{% endblock content %}

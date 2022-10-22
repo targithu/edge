@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+<style>
+    body{
+        background-image: url('{% static '../static/makin/bg.jpg' %}');
+        background-size:cover;
+        background-repeat:no-repeat;
+    text-align:center;
+    font-family: cursive;
+}
+.txt1{
+    margin-bottom: 100px;
+    margin-top:10px;
+}</style>
+</head>
+<body>
+    <div class="txt1">
+    <h1>List down the things you have done</h1>
+    <label for="w3review"></label>
+    <textarea id="des" name="des" rows="10" cols="140">
+    </textarea>
+    </div>
+    <div class="txt2">
+    <h1>Tell Us What all new things you have done today</h1>
+    <textarea id="des" name="des" rows="10" cols="140">
+    </textarea>
+    </div>
+</body>
+</html>

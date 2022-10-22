@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-image: url('{% static '../static/makin/bg.jpg' %}');
+            background-size:cover;
+            background-repeat:no-repeat;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-family: cursive;
+        }
+
+       .txt1{
+         margin-bottom: 100px;
+         margin-top:10px;
+         text-align: center;
+        }
+        #form1{
+            margin-left: 150px;
+        }
+        h1{
+            font-family: cursive;
+        }
+        #submit{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid wheat;
+    border-radius: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="txt1">
+    <h1>Describe what you have done and what all new things you find today</h1>
+    <label for="abc"></label>
+    
+    <textarea id="des" name="des" rows="10" cols="100">
+   
+    </textarea>
+    </div>
+    
+    <form>
+        <p>For How Many Hours You Have Performed The Following Activity</p>
+       <input type="radio" id="html" name="hours" value="first">
+     <label for="one">  1</label><br>
+     <input type="radio" id="css" name="hours" value="second">
+     <label for="two">  2</label><br>
+     <input type="radio" id="javascript" name="hours" value="third">
+     <label for="3">  3</label><br>
+     <!-- <button id="btn" onclick="val()">MORE THAN 3</button>
+     <p id="options"></p> -->
+        <!-- <label id="gr3text" for="3">>3</label> -->
+ 
+    </form>
+    <!-- <button onclick="myFunction()">More than 3</button>      
+    <p id="demo"></p> -->
+    <!-- <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Is this activity your hobby?";
+            // document.createElement("button").innerText(YES)
+        }
+            </script> -->
+            <p>Is this activity your hobby?</p>
+            <input type="radio" id="yes" name="hours" value="first">
+          <label for="one">YES</label><br>
+          <input type="radio" id="no" name="hours" value="second">
+          <label for="two">NO</label><br><br>
+        <input type="submit" id="submit" value="Submit">
+</body>
+</html>
