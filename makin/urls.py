@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import TaskList,TaskDetail,TaskCreate,TaskUpdate,TaskDelete,CustomLoginView,RegisterPage, describe, foundational
-from .views import feedback_form,pomodoro,first,foundational,acad_index,non_acad,outdoor,indoor,secondary,leisure,imag,alert,preparatory,middle,others
+from .views import feedback_form,pomodoro,first,foundational,non_acad,outdoor,indoor,secondary,leisure,imag,alert,preparatory,middle,others
 from django.contrib.auth.views import LogoutView
 urlpatterns = [
     path('login/',CustomLoginView.as_view(),name='login'),
@@ -14,7 +14,6 @@ urlpatterns = [
     path('feedback/',feedback_form,name="feedback"),
     path('pomodoro/',pomodoro,name="pomodoro"),
     path('first/',first,name='first'),
-    path('acad_index/',acad_index,name='acad_index'),
     path('foundational/',foundational,name='foundational'),
     path('secondary/',secondary,name='secondary'),
     path('preparatory/',preparatory,name='preparatory'),
